@@ -14,8 +14,9 @@ document.querySelector('.b-0').onclick = makeZero;
 //Используйте метод getElementById, чтобы найти элемент <p>. При нажатии на кнопку измените его текст на "Привет!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
+const paragraph1 = document.getElementById('practicum');
 function makeOne() {
-	//Ваш код
+	paragraph1.innerText = 'Привет!';
 }
 
 document.querySelector('.b-1').onclick = makeOne;
@@ -24,8 +25,9 @@ document.querySelector('.b-1').onclick = makeOne;
 //Используйте метод getElementById, чтобы найти элемент <span>. При нажатии на кнопку измените его текст на "Привет, Мир!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
+const practicum2 = document.getElementById('practicum2');
 function makeTwo() {
-	//Ваш код
+	practicum2.innerHTML = 'Привет, мир!';
 }
 
 document.querySelector('.b-2').onclick = makeTwo;
@@ -34,8 +36,9 @@ document.querySelector('.b-2').onclick = makeTwo;
 //Используйте метод querySelector, чтобы найти элемент <h1>. При нажатии на кнопку измените его текст на "Заголовок изменен!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
 
+const practicum3 = document.querySelector('section > h1');
 function makeThree() {
-	//Ваш код
+	practicum3.textContent = 'Заголовок изменен!';
 }
 
 document.querySelector('.b-3').onclick = makeThree;
@@ -44,8 +47,9 @@ document.querySelector('.b-3').onclick = makeThree;
 //Используйте метод querySelector, чтобы найти элемент <div>. При нажатии на кнопку измените его фоновый цвет на красный.
 //Подсказка: Используйте свойство style для изменения стилей элемента
 
+const practicum4 = document.querySelector ('#practicum4');
 function makeFour() {
-	//Ваш код
+	practicum4.style.backgroundColor = 'red';
 }
 
 document.querySelector('.b-4').onclick = makeFour;
@@ -54,8 +58,9 @@ document.querySelector('.b-4').onclick = makeFour;
 //Используйте метод getElementById, чтобы найти элемент <input>. При нажатии на кнопку измените его значение на "Новое значение".
 //Подсказка: Используйте свойство value для изменения значения элемента формы
 
+const practicum5 = document.getElementById ('practicum5');
 function makeFive() {
-	//Ваш код
+	practicum5.value = 'Новое значение';
 }
 
 document.querySelector('.b-5').onclick = makeFive;
@@ -69,15 +74,16 @@ function makeSix() {
 	img.src = 'newimage.jpg';
 	img.alt = 'Новое изображение';
 }
-
 document.querySelector('.b-6').onclick = makeSix;
 
 //Задание 7
 //Используйте метод querySelector, чтобы найти элемент <a>. При нажатии на кнопку измените его href на "https://www.google.com", а название ссылки на "Ссылка на Google".
 //Подсказка: Используйте знак равенства для изменения атрибутов элемента и метод для изменения текстового содержимого элемента
 
+const practicum7 = document.querySelector('#practicum7');
 function makeSeven() {
-	//Ваш код
+	practicum7.href = 'https://www.google.com';
+	practicum7.textContent = "Ссылка на Google";
 }
 
 document.querySelector('.b-7').onclick = makeSeven;
@@ -86,11 +92,11 @@ document.querySelector('.b-7').onclick = makeSeven;
 //Используйте метод getElementById, чтобы найти элемент <ul>. При нажатии на кнопку добавьте новый элемент <li> со значением "Новый элемент" в список.
 //Подсказка: Используйте метод createElement(), который используется для динамического изменения и взаимодействия с элементами веб-страницы, и метод append(item), который добавляет элемент в конец списка. Новый элемент становится последним элементом списка.
 
+const practicum8 = document.getElementById('practicum8');
 function makeEight() {
-	//Найдите элемент x
-	//Создайте новый пункт списка y
-	//Добавьте значение в созданный пункт списка y
-	//Добавьте в список х новый элемент y
+	const newItem = document.createElement('li');
+	newItem.textContent = 'Новый элемент';
+	practicum8.append(newItem);
 }
 
 document.querySelector('.b-8').onclick = makeEight;
@@ -99,7 +105,11 @@ document.querySelector('.b-8').onclick = makeEight;
 //Используйте метод getElementById, чтобы найти элемент <select>. При нажатии на кнопку добавьте новый элемент <option> со значением "Новый вариант" в список.
 //Подсказка: Используйте метод createElement(), который используется для динамического изменения и взаимодействия с элементами веб-страницы, и метод append(item), который добавляет элемент в конец списка. Новый элемент становится последним элементом списка.
 
+const practicum9 = document.getElementById('practicum9');
 function makeNine() {
+	const newElement = document.createElement('option');
+	newElement.textContent = 'Новый вариант';
+	practicum9.append(newElement);
 	//Найдите элемент
 	//Создайте новый элемент
 	//Добавьте текст в созданный эелемент
@@ -112,8 +122,10 @@ document.querySelector('.b-9').onclick = makeNine;
 //Используйте метод getElementById, чтобы найти элемент <div>. При нажатии на кнопку измените его стиль на "display: none;", чтобы скрыть его.
 //Подсказка: Используйте свойство display для изменения стилей элемента
 
+const practicum10 = document.getElementById('practicum10');
+
 function makeTen() {
-	//Ваш код
+	practicum10.style.display = 'none';
 }
 
 document.querySelector('.b-10').onclick = makeTen;
@@ -122,8 +134,11 @@ document.querySelector('.b-10').onclick = makeTen;
 //Используйте метод getElementById, чтобы найти элемент <div>. При нажатии на кнопку измените его ширину на 400px и высоту на 200px.
 //Подсказка: Используйте свойство style для изменения стилей элемента
 
+const practicum11 = document.getElementById('practicum11');
+
 function makeEleven() {
-	//Ваш код
+	practicum11.style.width = '400px';
+	practicum11.style.height = '200px';
 }
 
 document.querySelector('.b-11').onclick = makeEleven;
@@ -132,8 +147,24 @@ document.querySelector('.b-11').onclick = makeEleven;
 //Используйте метод querySelector, чтобы найти элемент <div>. При клике на этот элемент измените его ширину на 400px и высоту на 200px. При повторном клике верните его размеры в исходное состояние.
 //Подсказка: Используйте метод toggle() для добавления/удаления класса, который изменяет размеры элемента
 
+const practicum12 = document.querySelector('#practicum12');
+
 function makeTwelve() {
-	//Ваш код
+	
+	// practicum12.classList.add('height');
+	// style.height = '200px';
+	// practicum12.setAttribute('height', '200px');
+	// console.log(practicum12.hasAttribute('height'));
+	// practicum12.toggle.width = '400px';
+	
+	// style.width = '400px';
+	// practicum12.classList.add('height');
+	practicum12.style.height = '200px';
+	practicum12.classList.toggle('resizeable');
+	
+	console.log(`${practicum12.classList}`);
+
+
 }
 
 //Задание 13
